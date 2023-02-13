@@ -145,6 +145,7 @@ declare namespace seal {
     storageSet(key: string, value: string);
     /** 取数据 */
     storageGet(key: string): string;
+    onNotCommandReceived(ctx: MsgContext, msg: Message): CmdExecuteResult;
   }
 
   interface CmdExecuteResult {
@@ -156,25 +157,25 @@ declare namespace seal {
 
   export const ext: {
     /**
-     * 
+     *
      */
     new: (name: string, author: string, version: string) => ExtInfo;
 
     /**
      * 创建指令结果对象
-     * @param success 是否执行成功 
+     * @param success 是否执行成功
      */
     newCmdExecuteResult(success: boolean): CmdExecuteResult;
 
     /**
      * 注册一个扩展
-     * @param ext 
+     * @param ext
      */
     register(ext: ExtInfo): unknown;
 
     /**
      * 按名字查找扩展对象
-     * @param name 
+     * @param name
      */
     find(name: string): ExtInfo;
 
