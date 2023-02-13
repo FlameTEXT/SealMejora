@@ -1,5 +1,6 @@
 globalThis.extension = {};
-globalThis.extension.CmdInfo = {};
+extension.CmdInfo = {};
+extension.WhenReceive = {};
 
 extension.Register = (info) => {
   extension.ExtName = info.Name;
@@ -8,6 +9,17 @@ extension.Register = (info) => {
     extRaw = seal.ext.new(info.Name, info.Author, info.Version);
     seal.ext.register(extRaw);
   }
+  extRaw.onNotCommandReceived = (ctx, msgRaw) => {
+    for (let [k, act] of Object.entries(extension.WhenReceive)) {
+      let reg = new RegExp(k);
+      let match = msgRaw.message.match(reg);
+      if (match !== null) {
+        act(match);
+      }
+    }
+  }
+  // 记得清空以防被别的插件读取
+  extension.WhenReceive = {};
 };
 
 extension.AddCommand = (cmdInfo, doWhat) => {

@@ -14,12 +14,10 @@ extension.AddCommand(cmdInfo, cmd => {
   cmd.reply("hello!");
 });
 
-let anotherCmdInfo = {
-  Name: "bye",
-  Help: "No help",
-  NeedHelp: false
+extension.WhenReceive["hello"] = () => {
+  console.log("hi there!");
 }
 
-extension.AddCommand(anotherCmdInfo, cmd => {
-  cmd.reply("bye!");
-});
+extension.WhenReceive["I like (.*)"] = (match) => {
+  console.log("I like " + match[1] + "too!")
+}
