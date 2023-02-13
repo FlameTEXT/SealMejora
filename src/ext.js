@@ -1,4 +1,5 @@
 globalThis.extension = {};
+globalThis.extension.CmdInfo = {};
 
 extension.Register = (info) => {
   extension.ExtName = info.Name;
@@ -23,17 +24,25 @@ extension.AddCommand = (cmdInfo, doWhat) => {
   cmdRaw.allowDelegate = cmd.allowDelegate || false;
   cmdRaw.disabledInPrivate = cmd.disabledInPrivate || false;
   cmdRaw.solve = (ctx, msg, cmdArgs) => {
-    let c = extension.CmdInfo[cmdArgs.command];
-    c.ctx = ctx;
-    c.msg = msg;
-    c.argv = cmdArgs;
-    let returnValue = cmd.solve();
-    let ret = seal.ext.newCmdExecuteResult(returnValue);
-    if (cmdInfo.NeedHelp) {
+    cmd.ctx = ctx;
+    cmd.msg = msg;
+    cmd.argv = cmdArgs;
+
+    if (cmdInfo.NeedHelp && cmd.argv.getArgN(1) === "help") {
+      let ret = seal.ext.newCmdExecuteResult(true);
       ret.showHelp = true;
+      return ret;
     }
-    return ret;
+
+    let returnValue = cmd.solve(cmd);
+
+    let key = ['name', 'help', 'solve', 'allowDelegate', 'disabledInPrivate']
+    for (let [k] of Object.entries(cmd)) {
+      if (!key.find(x => k === x)) cmd[k] = null
+    }
+
+    return returnValue;
   };
   let extRaw = seal.ext.find(extension.ExtName);
-  extRaw.cmdMap[cmdRaw.name] = cmd;
+  extRaw.cmdMap[cmdRaw.name] = cmdRaw;
 };

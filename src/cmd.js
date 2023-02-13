@@ -12,7 +12,7 @@ command.solve = () => { return true }
 
 /** 回复消息 */
 command.reply = function (s) {
-    seal.replyToSender(this.ctx, this.msg, s);
+  seal.replyToSender(this.ctx, this.msg, s);
 };
 
 /** 添加一个指令
@@ -23,44 +23,42 @@ command.reply = function (s) {
  */
 command.add = function (name, fun, ext = ['test', 'null', '0.0.0']) {
 
-    var extraw = seal.ext.find(ext[0] || 'name');
-    if (!extraw) {
-        extraw = seal.ext["new"](ext[0] || 'name', ext[1] || 'null', ext[2] || '0.0.0');
-        seal.ext.register(extraw);
+  var extraw = seal.ext.find(ext[0] || 'name');
+  if (!extraw) {
+    extraw = seal.ext["new"](ext[0] || 'name', ext[1] || 'null', ext[2] || '0.0.0');
+    seal.ext.register(extraw);
+  }
+
+  command[name] = Object.create(command) // 方法继承
+  cmd = command[name]
+  cmd.name = name
+  cmd.solve = fun
+
+  var cmdraw = seal.ext.newCmdItemInfo();
+  cmdraw.name = cmd[name].name;
+  cmdraw.help = cmd[name].help || command.help;
+  cmdraw.solve = function (ctx, msg, cmdArgv) {
+    var c = command[cmdArgv.command] // 从全局对象获取
+    c.ctx = ctx;
+    c.msg = msg;
+    c.argv = cmdArgv;
+
+    var b = c.solve(c);
+    ret = seal.ext.newCmdExecuteResult(b);
+    if (!b) {
+      ret.showhelp = true
     }
 
-    command[name] = Object.create(command) // 方法继承
-    cmd = command[name]
-    cmd.name = name
-    cmd.solve = fun
+    var key = ['name', 'help', 'solve', 'allowDelegate', 'disabledInPrivate']
+    for (let [k] of Object.entries(c)) {
+      if (!key.find(x => k == x)) c[k] = null
+    } // 清空仅运行时需要的属性
 
-    var cmdraw = seal.ext.newCmdItemInfo();
-    cmdraw.name = cmd[name].name;
-    cmdraw.help = cmd[name].help || command.help;
-    cmdraw.solve = function (ctx, msg, cmdArgv) {
-        var c = command[cmdArgv.command] // 从全局对象获取
-        c.ctx = ctx;
-        c.msg = msg;
-        c.argv = cmdArgv;
+    return ret;
+  };
 
-        var b = c.solve(c);
-        ret = seal.ext.newCmdExecuteResult(b);
-        if (!b) {
-            ret.showhelp = true
-        }
+  extraw.cmdMap[cmdraw.name] = cmdraw;
 
-        var key = ['name', 'help', 'solve', 'allowDelegate', 'disabledInPrivate']
-        for (let [k] of Object.entries(c)) {
-            if (!key.find(x => k == x)) c[k] = null
-        } // 清空仅运行时需要的属性
-
-        return ret;
-    };
-
-    extraw.cmdMap[cmdraw.name] = cmdraw;
-
-    return 
+  return
 }
-
-
 

@@ -34,8 +34,6 @@ declare interface Command {
     getConfig():string
     setTempVal():string
     setGroupVal():string
-
-    
 }
 
 interface config {
