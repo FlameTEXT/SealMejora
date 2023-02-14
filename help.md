@@ -24,8 +24,8 @@ let cmdInfo = {
   NeedHelp: true
 };
 
-extension.AddCommand(cmdInfo, cmd => {
-  cmd.reply("hello!");
+extension.AddCommand(cmdInfo, () => {
+  Reply("hello!");
 });
 ```
 
@@ -82,7 +82,7 @@ ext.cmdMap["greet"] = cmd;
 
 ### 回复
 
-<!-- 等reply重写完再写。 -->
+回复方法在 SealMejora 中被大大简化。
 
 ## 更多功能
 
@@ -100,23 +100,31 @@ ext.onNotCommandReceived = (ctx, msg) => {
 SealMejora 中，处理非指令消息的方式有些不同：
 
 ```javascript
-let notCommandHandler = {
-  "hello": () => {
-    // 一些代码...
+let notCommandHandler = [
+  {
+    match: "hello!",
+    action: () => {
+        Reply("Hi there!");
+    }
   },
-  "I like (.*)": (match) => {
-    console.log(`I like ${match[1]} too!`);
+  {
+    match: /I like (.*)/,
+    action: (match) => {
+        Reply(`I like ${match[1]} too!`);
+    }
   }
-}
+];
 
 extension.HandleNotCommand(notCommandHandler, false, null);
 ```
 
-我们使用`extension.HandleNotCommand()`来处理非指令消息，但这个方法的第一个参数是`Object`，其中键为触发操作的文本，值为对应的操作。文本可以是正则表达式，在解析时会用其匹配值作为参数。这样设计的目的是防止意外的频繁操作和刷屏（例如，无论受到什么消息骰子都回复“你好”，同时写入一大堆数据，这对于每天收到几千条消息的公骰通常是灾难），并节省写`switch-case`的时间。
+我们使用`extension.HandleNotCommand()`来处理非指令消息，但这个方法的第一个参数是一个由对象构成的数组，每个对象有两个键，`match`为触发操作的文本或正则表达式，`action`为对应的操作。在调用参数时，会传递消息原文（如果`match`是字符串）或者匹配对象（如果`match`是正则表达式）。
 
-第二个参数是一个布尔值，它的默认值是`false`。程序将收到的消息与`notCommandHandler`中的键从上到下依次比对，如果第二个参数为`true`，那么在第一次比对成功后，程序将会继续比对剩下的值。反之，将停止。
+这种方法收到了海豹的自定义回复机制启发。这样设计的目的是防止意外的频繁操作和刷屏（例如，无论受到什么消息骰子都回复“你好”，同时写入一大堆数据，这对于每天收到几千条消息的公骰通常是灾难），并节省写`switch-case`的时间。
 
-第三个参数是可选的。它是一个`Function`，为那些有真正需要的人所保留。它相当于`ExtInfo.onNotCommandReceived()`当骰子每一次收到消息时，如果这个参数存在，则执行它。我们建议你只在真正有必要的时候才规定它的值。
+第二个参数是一个布尔值，它的默认值是`false`。程序将收到的消息与数组中的`match`从上到下依次比对，如果第二个参数为`true`，那么在第一次比对成功后，程序将会继续比对剩下的值。反之，将停止。
+
+第三个参数是可选的。它是一个`Function`，为那些有真正需要的人所保留。它相当于`ExtInfo.onNotCommandReceived()`当骰子每一次收到消息时，如果这个参数存在，则执行它。我们建议你只在真正有必要的时候才使用它。
 
 ### 读取数据
 
