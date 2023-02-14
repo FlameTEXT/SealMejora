@@ -11,6 +11,71 @@ declare namespace seal {
     isPrivate: boolean;
     /** 权限等级 40邀请者 50管理 60群主 100master */
     privilegeLevel: number;
+    /** 代骰附加文本 */
+    delegateText: string
+    /** 对通知列表发送消息 */
+    notice(text: string): void
+
+    // 谨慎使用角色卡相关 api ，有可能写坏数据库
+
+    /** 绑定角色卡到当前群 */
+    chBindCur(name: string)
+    /* 获取当前群绑定角色 返回名字或者空字符串*/
+    chBindCurGet(): string
+    /** 获取一个正在绑定状态的卡，可用于该卡片是否绑卡检测 */
+    chBindGet(name: string): ValueMap
+    /** 返回当前卡绑定的群列表 */
+    chBindGetList(): string[]
+    /** 解除某个角色的绑定 返回绑定过的群列表 */
+    chUnbind(name: string): string[]
+    /** 解除绑定 成功返回 `[角色名,true]`，失败返回 `["",false]`  */
+    chUnbindCur(name: string): [string, boolean]
+
+
+    /* 判断角色是否存在 */
+    chExists(name: string): boolean
+    /** 新建角色 成功 true；存在同名角色 false */
+    chNew(name: string): boolean
+    /** 清空当前群角色卡变量 返回被清空的变量数量 */
+    chVarsClear(): number
+    /** 获取当前角色 ValueMap */
+    chVarsGet(): ValueMap
+    /** 获取当前角色变量数量，底层为 `ValueMap.len()` */
+    chVarsNumGet(): number
+    /** 更新角色卡操作时间 */
+    chVarsUpdateTime(): void
+
+    // 这些接口不推荐使用，太麻烦了
+    /**  获取角色数据 成功返回 ValueMap ，失败返回 null */
+    chGet(name: string): ValueMap | null
+    /** 加载角色，成功返回 ValueMap ，失败返回 null */
+    chLoad(name: string): ValueMap | null
+    /** 加载个人群内数据 */
+    loadGroupVars(g: GroupInfo, p: GroupPlayerInfo): void
+    /** 加载个人全局数据 */
+    loadPlayerGlobalVars(): void
+    /** 加载个人群内数据 */
+    loadPlayerGroupVars(): void
+
+  }
+
+  export interface ValueMap {
+    // 获取
+    get(k): [any, boolean]
+    // 添加
+    set(k, v): void
+    // 删除
+    del(k): void
+    // 数量
+    len(): number
+    // 迭代
+    next(): [any, any, boolean]
+    // 遍历
+    iterate(fun: (k, v) => void): void
+    // 加锁
+    lock(): void
+    // 解锁
+    unlock(): void
   }
 
   /** 群信息 */
@@ -104,11 +169,20 @@ declare namespace seal {
     cleanArgs: string;
     // 暂不提供，未来可能有变化
     // specialExecuteTimes: number;
+    // 但是额外指出， `ra10#50` 时此项 = 10，并且 argv[0] 会被处理为 50；请注意这一点
 
     /** 获取关键字参数，如“.ra 50 --key=20 --asm”时，有两个kwarg，一个叫key，一个叫asm */
-    getKwargs(key: string): Kwarg;
+    getKwarg(key: string): Kwarg; // 实际上没有 s
     /** 获取第N个参数，从1开始，如“.ra 力量50 推门” 参数1为“力量50”，参数2是“推门” */
     getArgN(n: number): string;
+    /** 分离前缀 如 `.stdel力量` => [del,力量] ，直接修改 argv 属性*/
+    chopPrefixToArgsWith(...s: string[]): boolean
+    /** 吃掉前缀并去除复数空格 `set xxx  xxx` => `xxx xxx`，返回修改后的字符串和是否修改成功的布尔值  */
+    eatPrefixWith(...s: string[]): [string, boolean]
+    /** 将第 n 个参数及之后参数用空格拼接起来; 如指令 `send to qq x1 x2`,n=3返回 `x1 x2` */
+    getRestArgsFrom(n: number): number
+    /** 检查第N项参数是否为某个字符串，n从1开始，若没有第n项参数也视为失败 */
+    isArgEqual(n: number, ...s: string[]): boolean
   }
 
 
@@ -141,12 +215,34 @@ declare namespace seal {
     author: string;
     /** 指令映射 */
     cmdMap: { [key: string]: CmdItemInfo };
+    /** 是否加载完成 */
+    isLoaded: boolean
     /** 存放数据 */
     storageSet(key: string, value: string);
     /** 取数据 */
     storageGet(key: string): string;
-    onNotCommandReceived(ctx: MsgContext, msg: Message): CmdExecuteResult;
+    /** 匹配非指令消息 */
+    OnNotCommandReceived: (ctx: MsgContext, msg: Message) => void
+    /** 试图匹配自定义指令（只对内置扩展有意义） */
+    onCommandOverride: (ctx: MsgContext, msg: Message, cmdArgs: CmdArgs) => boolean;
+    /** 监听 收到指令 事件 */
+    onCommandReceived: (ctx: MsgContext, msg: Message, cmdArgs: CmdArgs) => void
+    /** 监听 收到消息 事件，如 log 模块记录收到文本 */
+    onMessageReceived: (ctx: MsgContext, msg: Message) => void
+    /** 监听 发送消息 事件，如 log 模块记录指令文本 */
+    onMessageSend: (ctx: MsgContext, msg: Message) => void
+    /** 获取扩展介绍文本 */
+    getDescText(): string
+    /** 监听 加载时 事件，如 deck 模块需要读取牌堆文件 */
+    onLoad: (...any: any) => void
+    /** 初始化数据，读写数据时会自动调用 */
+    storageInit()
+    /** 读数据 如果无需自定义错误处理就无需使用 */
+    storageGetRaw(k: string)
+    /** 写数据 如果无需自定义错误处理就无需使用 */
+    storageSetRaw(k: string, v: string)
   }
+
 
   interface CmdExecuteResult {
     /** 是否顺利完成执行 */
@@ -157,28 +253,28 @@ declare namespace seal {
 
   export const ext: {
     /**
-     *
+     * 新建一个扩展
      */
     new: (name: string, author: string, version: string) => ExtInfo;
 
     /**
      * 创建指令结果对象
-     * @param success 是否执行成功
+     * @param success 是否执行成功 
      */
     newCmdExecuteResult(success: boolean): CmdExecuteResult;
 
     /**
      * 注册一个扩展
-     * @param ext
+     * @param ext 
      */
     register(ext: ExtInfo): unknown;
 
     /**
      * 按名字查找扩展对象
-     * @param name
+     * @param name 
      */
     find(name: string): ExtInfo;
-
+    /** 创建指令对象 */
     newCmdItemInfo(): CmdItemInfo;
   }
 
@@ -214,14 +310,50 @@ declare namespace seal {
     registerRule(rule: CocRuleInfo): boolean;
   }
 
-  /** 代骰模式下，获取被代理人信息 */
-  export function getCtxProxyFirst(ctx: MsgContext, msg: Message): MsgContext;
   /** 回复发送者(发送者私聊即私聊回复，群内即群内回复) */
   export function replyToSender(ctx: MsgContext, msg: Message, text: string): void;
   /** 回复发送者(私聊回复，典型应用场景如暗骰) */
   export function replyPerson(ctx: MsgContext, msg: Message, text: string): void;
   /** 回复发送者(群内回复，私聊时无效，典型应用场景暗骰) */
   export function replyGroup(ctx: MsgContext, msg: Message, text: string): void;
-  /** 格式化文本 */
+  /** 格式化文本 等价于 `text` 指令 */
   export function format(ctx: MsgContext, text: string): string;
+  /** 获取回复文案；注意 $t 这类临时变量的遗留，请事先赋值 */
+  export function formatTmpl(ctx: MsgContext, text: string): string
+  /** 代骰模式下，获取被代理人信息 */
+  export function getCtxProxyFirst(ctx: MsgContext, msg: Message): MsgContext;
+
+  /** 获取/修改 VM 变量 ，如 `$t`、`$g` */
+  export const vars: {
+    /** VM 中存在 key 且类型正确 返回 `[number,true]` ，否则返回 `[0,false]` */
+    intGet(ctx: MsgContext, key: string): [number, boolean];
+    /** 赋值 key 为 value 等价于指令 `text {key=value}` value 类型为数字 */
+    intSet(ctx: MsgContext, key: string, value: number): void;
+    /** VM 中存在 key 且类型正确 返回 `[string,true]` ，否则返回 `['',false]` */
+    strGet(ctx: MsgContext, key: string): [string, boolean];
+    /** 赋值 key 为 value 等价于指令 `text {key=value}` value 类型为字符串 */
+    strSet(ctx: MsgContext, key: string, value: string): void;
+  }
+
+  /** deck */
+  export interface deckResult {
+    /** 是否存在 */
+    "exists": boolean,
+    /** 错误信息 */
+    "err": string,
+    /** 抽牌结果 */
+    "result": string | null
+  }
+
+  export const deck: {
+    /**
+     * 抽牌函数
+     * @param ctx 
+     * @param name 牌堆名
+     * @param isShuffle 是否放回
+     */
+    draw(ctx: MsgContext, name: string, isShuffle: boolean): deckResult
+    reload(d): void // 有个问题 js 能访问到 Dice 类吗
+  }
+
 }
