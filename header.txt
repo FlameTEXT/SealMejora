@@ -1,10 +1,9 @@
 // ==UserScript==
-// @name         模板项目
-// @author       作者名
-// @version      1.0.0
-// @description  这是海豹的js扩展模板项目，请自行修改信息
-// @timestamp    1674477074
-// 2023/1/23
+// @name         SealMejora
+// @author       NAO，檀轶步棋
+// @version      0.0.1-preview
+// @description  一个帮你更快编写海豹插件的项目。
+// @timestamp    1676158106
 // @license      MIT
-// @homepageURL  https://github.com/sealdice/sealdice-js-template
+// @homepageURL  https://github.com/sealdice
 // ==/UserScript==
