@@ -1,6 +1,12 @@
 globalThis.extension = {};
 extension.CmdInfo = {};
-extension.WhenReceive = {};
+extension.WhenReceives = {};
+
+class DataManager {
+  extRaw;
+  GetData(database, ifEmpty) {}
+  WriteData(database, data) {}
+}
 
 extension.Register = (info) => {
   extension.ExtName = info.Name;
@@ -9,17 +15,8 @@ extension.Register = (info) => {
     extRaw = seal.ext.new(info.Name, info.Author, info.Version);
     seal.ext.register(extRaw);
   }
-  extRaw.onNotCommandReceived = (ctx, msgRaw) => {
-    for (let [k, act] of Object.entries(extension.WhenReceive)) {
-      let reg = new RegExp(k);
-      let match = msgRaw.message.match(reg);
-      if (match !== null) {
-        act(match);
-      }
-    }
-  }
-  // 记得清空以防被别的插件读取
-  extension.WhenReceive = {};
+  extension.WhenReceive = new Map;
+  return extRaw;
 };
 
 extension.AddCommand = (cmdInfo, doWhat) => {
@@ -58,3 +55,39 @@ extension.AddCommand = (cmdInfo, doWhat) => {
   let extRaw = seal.ext.find(extension.ExtName);
   extRaw.cmdMap[cmdRaw.name] = cmdRaw;
 };
+
+extension.HandleNotCommand = (WhenReceive = {}, doContinue = false, onDefault = () => {}) => {
+  if (Object.keys(WhenReceive).length === 0) {
+    return;
+  } else {
+    extension.WhenReceives[extension.ExtName] = WhenReceive;
+  }
+  let actions = extension.WhenReceives[extension.ExtName];
+  for (let [k, act] of Object.entries(extension.WhenReceives[extension.ExtName])) {
+    actions[k] = act;
+  }
+  let extRaw = seal.ext.find(extension.ExtName);
+  extRaw.onNotCommandReceived = (ctx, msgRaw) => {
+    onDefault !== null ? onDefault() : false;
+    for (let [k, act] of Object.entries(actions)) {
+      let reg = new RegExp(k);
+      let match = msgRaw.message.match(reg);
+      if (match !== null) {
+        act(match);
+        if (!doContinue) break;
+      }
+    }
+  }
+}
+
+extension.NewDataManager = () => {
+  let manager = new DataManager();
+  manager.extRaw = seal.ext.find(extension.ExtName);
+  manager.GetData = (database, ifEmpty = "{}") => {
+    return JSON.parse(manager.extRaw.storageGet(database) || ifEmpty);
+  }
+  manager.WriteData = (database, data) => {
+    manager.extRaw.storageSet(database, JSON.stringify(data));
+  }
+  return manager;
+}

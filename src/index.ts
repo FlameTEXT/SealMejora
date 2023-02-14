@@ -14,10 +14,24 @@ extension.AddCommand(cmdInfo, cmd => {
   cmd.reply("hello!");
 });
 
-extension.WhenReceive["hello"] = () => {
-  console.log("hi there!");
+let myDataManager = extension.NewDataManager();
+
+let handler = {
+  "hello": () => {
+    console.log("hi there!");
+  },
+
+  "My favorite kind of food is (.*)": (match) => {
+    myDataManager.WriteData("food", match[1]);
+  },
+
+  "What is my favorite food?": () => {
+    console.log(`${myDataManager.GetData("food")} is your favorite food.`);
+  },
+
+  "I like (.*)": (match) => {
+    console.log("I like " + match[1] + "too!")
+  }
 }
 
-extension.WhenReceive["I like (.*)"] = (match) => {
-  console.log("I like " + match[1] + "too!")
-}
+extension.HandleNotCommand(handler, false, null);
