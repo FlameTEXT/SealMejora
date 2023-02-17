@@ -50,6 +50,14 @@ declare class DataManager {
   WriteData(database: string, data: any);
   /** 获取当前上下文（ctx） */
   GetContext(): seal.MsgContext;
+  /** 获得玩家名 */
+  GetUserName(): string;
+  /** 获得玩家ID */
+  GetUserID(): string;
+  /** 获取群组名 */
+  GetGroupName(): string;
+  /** 获取群组ID */
+  GetGroupID(): string;
   /** 获取当前msg */
   GetMessageInfo(): seal.Message;
   /** = `cmdArgs.getArgN()`*/

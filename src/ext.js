@@ -27,11 +27,13 @@ class DataManager {
   GetMessageInfo() {}
   GetArg(number) {}
   GetArgs() {}
+  GetUserName() {}
+  GetUserID() {}
+  GetGroupName() {}
+  GetGroupID() {}
 }
 
-globalThis.Reply = (message) => {
-  seal.replyToSender(curCtx, curMsg, message);
-}
+globalThis.Reply = (message) => seal.replyToSender(curCtx, curMsg, message);
 
 globalThis.ReplyPerson = (message, toWhom) => {
   toWhom = toWhom.toString();
@@ -51,9 +53,7 @@ globalThis.ReplyGroup = (message, toWhom) => {
   seal.replyPerson(curCtx, mmsg, message);
 }
 
-globalThis.Format = (data) => {
-  return seal.format(curCtx, data);
-}
+globalThis.Format = (data) => seal.format(curCtx, data);
 
 extension.Register = (info) => {
   extension.ExtName = info.Name;
@@ -145,5 +145,9 @@ extension.NewDataManager = () => {
       return curArgs.getArgN(n);
     }
   }
+  manager.GetUserID = () => curMsg.sender.userId || curCtx.player.userId;
+  manager.GetUserName = () => curMsg.sender.nickname || curCtx.player.name;
+  manager.GetGroupID = () => curMsg.group.groupId || curCtx.group.groupId;
+  manager.GetGroupName = () => curMsg.group.groupName || curCtx.group.groupName;
   return manager;
 }
