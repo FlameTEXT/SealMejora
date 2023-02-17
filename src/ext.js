@@ -51,6 +51,10 @@ globalThis.ReplyGroup = (message, toWhom) => {
   seal.replyPerson(curCtx, mmsg, message);
 }
 
+globalThis.Format = (data) => {
+  return seal.format(curCtx, data);
+}
+
 extension.Register = (info) => {
   extension.ExtName = info.Name;
   let extRaw = seal.ext.find(info.Name);
