@@ -222,7 +222,7 @@ declare namespace seal {
     /** 取数据 */
     storageGet(key: string): string;
     /** 匹配非指令消息 */
-    OnNotCommandReceived: (ctx: MsgContext, msg: Message) => void
+    onNotCommandReceived: (ctx: MsgContext, msg: Message) => void
     /** 试图匹配自定义指令（只对内置扩展有意义） */
     onCommandOverride: (ctx: MsgContext, msg: Message, cmdArgs: CmdArgs) => boolean;
     /** 监听 收到指令 事件 */
