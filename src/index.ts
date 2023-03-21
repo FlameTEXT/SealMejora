@@ -11,7 +11,7 @@ let cmdInfo = {
 
 let myDataManager = extension.NewDataManager();
 extension.AddCommand(cmdInfo, () => {
-  Reply(`You said ${myDataManager.GetArg(1)}, ${myDataManager.GetMessageInfo().sender.nickname}`);
+  Reply(`You said ${myDataManager.GetArg(1)}, ${myDataManager.GetUserName()}`);
   return true;
 });
 
