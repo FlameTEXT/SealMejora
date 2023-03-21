@@ -321,7 +321,7 @@ declare namespace seal {
   /** 获取回复文案；注意 $t 这类临时变量的遗留，请事先赋值 */
   export function formatTmpl(ctx: MsgContext, text: string): string
   /** 代骰模式下，获取被代理人信息 */
-  export function getCtxProxyFirst(ctx: MsgContext, msg: Message): MsgContext;
+  export function getCtxProxyFirst(ctx: MsgContext, cmdArgs: CmdArgs): MsgContext;
 
   /** 获取/修改 VM 变量 ，如 `$t`、`$g` */
   export const vars: {
