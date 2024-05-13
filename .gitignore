@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 dist
 dev
+test
+pnpm-lock.yaml

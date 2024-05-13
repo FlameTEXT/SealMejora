@@ -1,8 +1,9 @@
 import { sum } from "./sum";
+
 function main() {
-  let ext = seal.ext.find("js-ext");
+  let ext = seal.ext.find("sum");
   if (!ext) {
-    ext = seal.ext.new("js-ext", "null", "1.0.0");
+    ext = seal.ext.new("sum", "nao", "1.0.0");
     seal.ext.register(ext);
   }
   const cmd = seal.ext.newCmdItemInfo();

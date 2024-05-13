@@ -14,38 +14,40 @@ if (!name) {
 
 let dir = path.join(process.cwd(), "src", name)
 
+if (fs.existsSync(dir)) {
+  console.error("已存在同名的插件文件夹")
+  process.exit()
+}
 
+fs.mkdirSync(dir)
 
-try {
-  fs.mkdirSync(dir)
+const template_index = `
+let ext = seal.ext.find("${name}");
+if (!ext) {
+  ext = seal.ext.new("${name}", "${author}", "0.0.0");
+  seal.ext.register(ext);
+}
 
-  fs.writeFileSync(path.join(dir, "index.ts"),
-    `let ext = seal.ext.find("${name}");
-  if (!ext) {
-    ext = seal.ext.new("${name}", "${author}", "1.0.0");
-    seal.ext.register(ext);
-  }
+export {}`;
+fs.writeFileSync(path.join(dir, "index.ts"),template_index.trim())
 
-  export {}`)
+const template_config = `
+const config = {
+  // 扩展名
+  "name": "${name}",
+  // 扩展作者
+  "author": ${author},
+  // 项目主页
+  "homepageURL": "${homepageURL}",
+}
 
-  fs.writeFileSync(path.join(dir, "config.mjs"),
-    `const config = {
-    // 扩展名
-    "name": "${name}",
-    // 扩展作者
-    "author": "nao",
-    // 项目主页
-    "homepageURL": "${homepageURL}",
-  }
+export default {
+  ...config,
 
-  export default {
-    ...config,
-
-    // 输出文件名
-    outfile: config.name+".js"
-  }`)
-} catch (e) { console.log(e); }
-
+  // 输出文件名
+  outfile: config.name+".js"
+}`;
+fs.writeFileSync(path.join(dir, "config.mjs"), template_config.trim())
 
 
 console.log("New: ", dir);
