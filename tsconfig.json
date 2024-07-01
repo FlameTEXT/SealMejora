@@ -15,6 +15,7 @@
     "rootDir": "src",
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
+    "resolveJsonModule":true
   },
   "include": [
     "src/**/*.ts",

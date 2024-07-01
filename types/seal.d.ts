@@ -67,7 +67,7 @@ declare namespace seal {
     /** 发送时间 */
     time: number;
     /** 群消息/私聊消息 */
-    messageType: 'group' | 'private';
+    messageType: "group" | "private";
     /** 群ID */
     groupId: string;
     /** 服务器ID */
@@ -169,6 +169,22 @@ declare namespace seal {
     storageSet(key: string, value: string): void;
     /** 取数据 */
     storageGet(key: string): string;
+    /** 匹配非指令消息 */
+    onNotCommandReceived: (ctx: MsgContext, msg: Message) => void;
+    /** 监听 收到指令 事件 */
+    onCommandReceived: (
+      ctx: MsgContext,
+      msg: Message,
+      cmdArgs: CmdArgs
+    ) => void;
+    /** 监听 收到消息 事件，如 log 模块记录收到文本 */
+    onMessageReceived: (ctx: MsgContext, msg: Message) => void;
+    /** 监听 发送消息 事件，如 log 模块记录指令文本 */
+    onMessageSend: (ctx: MsgContext, msg: Message) => void;
+    /** 获取扩展介绍文本 */
+    getDescText(): string;
+    /** 监听 加载时 事件，如 deck 模块需要读取牌堆文件 */
+    onLoad: (...any: any) => void;
   }
 
   interface CmdExecuteResult {
@@ -313,3 +329,9 @@ declare namespace seal {
     getUser(id: string): BanListInfoItem | null;
   };
 }
+
+interface Console {
+  log(...data: any[]): void;
+}
+
+declare const console: Console;
