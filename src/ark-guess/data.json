@@ -1,0 +1,2461 @@
+{
+  "12F": {
+    "illust": "海猫络合物",
+    "nation": "不明",
+    "profession": "术师",
+    "race": "萨弗拉",
+    "rarity": 2
+  },
+  "Castle-3": {
+    "illust": "TOKI",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "rarity": 1
+  },
+  "Friston-3": {
+    "illust": "过失帝国",
+    "nation": "罗德岛",
+    "profession": "重装",
+    "rarity": 1
+  },
+  "Lancet-2": {
+    "illust": "TOKI",
+    "nation": "哥伦比亚",
+    "profession": "医疗",
+    "rarity": 1
+  },
+  "PhonoR-0": {
+    "illust": "M1917史密斯维森",
+    "nation": "罗德岛",
+    "profession": "辅助",
+    "rarity": 1
+  },
+  "Pith": {
+    "illust": "Cornelies",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "Sharp": {
+    "illust": "熊太",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "斐迪亚",
+    "rarity": 5
+  },
+  "Stormeye": {
+    "illust": "熊太",
+    "nation": "卡兹戴尔",
+    "profession": "狙击",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "THRM-EX": {
+    "illust": "TOKI",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "rarity": 1
+  },
+  "Touch": {
+    "illust": "熊太",
+    "nation": "莱塔尼亚",
+    "profession": "医疗",
+    "race": "卡普里尼",
+    "rarity": 5
+  },
+  "U-Official": {
+    "illust": "折射镜",
+    "nation": "未公开",
+    "profession": "辅助",
+    "race": "札拉克",
+    "rarity": 1
+  },
+  "W": {
+    "illust": "Liduke",
+    "nation": "卡兹戴尔",
+    "profession": "狙击",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "巴别塔"
+  },
+  "万顷": {
+    "illust": "三目YYB",
+    "nation": "炎",
+    "profession": "先锋",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "临光": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "重装",
+    "race": "库兰塔",
+    "rarity": 5,
+    "teamId": "使徒"
+  },
+  "乌尔比安": {
+    "illust": "Skade",
+    "nation": "阿戈尔",
+    "profession": "近卫",
+    "race": "阿戈尔",
+    "rarity": 6,
+    "teamId": "深海猎人"
+  },
+  "乌有": {
+    "illust": "Skade",
+    "nation": "炎",
+    "profession": "特种",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "九色鹿": {
+    "illust": "IRIS_呓",
+    "nation": "炎",
+    "profession": "辅助",
+    "race": "埃拉菲亚",
+    "rarity": 5
+  },
+  "亚叶": {
+    "illust": "m9nokuro",
+    "nation": "乌萨斯",
+    "profession": "医疗",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "仇白": {
+    "illust": "温泉瓜",
+    "nation": "炎",
+    "profession": "近卫",
+    "race": "埃拉菲亚",
+    "rarity": 6
+  },
+  "令": {
+    "illust": "下野宏铭",
+    "nation": "炎",
+    "profession": "辅助",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "炎-岁"
+  },
+  "伊内丝": {
+    "illust": "板板",
+    "nation": "卡兹戴尔",
+    "profession": "先锋",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "巴别塔"
+  },
+  "伊桑": {
+    "illust": "阿鬼",
+    "nation": "未公开",
+    "profession": "特种",
+    "race": "萨弗拉",
+    "rarity": 4
+  },
+  "伊芙利特": {
+    "illust": "NoriZC",
+    "nation": "未公开",
+    "profession": "术师",
+    "race": "萨■卡訧譱瀫?",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "休谟斯": {
+    "illust": "我妻洛酱",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "丰蹄",
+    "rarity": 4
+  },
+  "伺夜": {
+    "illust": "hou",
+    "nation": "叙拉古",
+    "profession": "先锋",
+    "race": "鲁珀",
+    "rarity": 6
+  },
+  "但书": {
+    "illust": "せんむ",
+    "nation": "卡西米尔",
+    "profession": "辅助",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "假日威龙陈": {
+    "illust": "唯@W",
+    "nation": "龙门",
+    "profession": "狙击",
+    "race": "龙",
+    "rarity": 6
+  },
+  "傀影": {
+    "illust": "Skade",
+    "nation": "维多利亚",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "克洛丝": {
+    "illust": "下野宏铭",
+    "nation": "",
+    "profession": "狙击",
+    "race": "",
+    "rarity": 3,
+    "teamId": "行动预备组A1"
+  },
+  "冰酿": {
+    "illust": "Mag42",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "race": "埃拉菲亚",
+    "rarity": 5
+  },
+  "凛冬": {
+    "illust": "Skade",
+    "nation": "乌萨斯",
+    "profession": "先锋",
+    "race": "乌萨斯",
+    "rarity": 5,
+    "teamId": "乌萨斯学生自治团"
+  },
+  "凛视": {
+    "illust": "伍秋秋秋秋",
+    "nation": "萨米",
+    "profession": "辅助",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "凯尔希": {
+    "illust": "唯@W",
+    "nation": "罗德岛",
+    "profession": "医疗",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "初雪": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "辅助",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "喀兰贸易"
+  },
+  "刺玫": {
+    "illust": "Studio Montagne",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "刻俄柏": {
+    "illust": "LM7",
+    "nation": "玻利瓦尔",
+    "profession": "术师",
+    "race": "佩洛",
+    "rarity": 6
+  },
+  "刻刀": {
+    "illust": "下野宏铭",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "医生": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "近卫",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "华法琳": {
+    "illust": "时辰",
+    "nation": "卡兹戴尔",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "卡夫卡": {
+    "illust": "NoriZC",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "卡涅利安": {
+    "illust": "カワグチ",
+    "nation": "萨尔贡",
+    "profession": "术师",
+    "race": "卡普里尼",
+    "rarity": 6
+  },
+  "卡缇": {
+    "illust": "一立里子",
+    "nation": "莱塔尼亚",
+    "profession": "重装",
+    "race": "佩洛",
+    "rarity": 3,
+    "teamId": "行动预备组A4"
+  },
+  "卡达": {
+    "illust": "れおえん",
+    "nation": "未公开",
+    "profession": "术师",
+    "race": "札拉克",
+    "rarity": 4
+  },
+  "历阵锐枪芬": {
+    "illust": "下野宏铭",
+    "nation": "卡西米尔",
+    "profession": "先锋",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "双月": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "特种",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "古米": {
+    "illust": "Skade",
+    "nation": "乌萨斯",
+    "profession": "重装",
+    "race": "乌萨斯",
+    "rarity": 4,
+    "teamId": "乌萨斯学生自治团"
+  },
+  "可颂": {
+    "illust": "幻象黑兔",
+    "nation": "米诺斯",
+    "profession": "重装",
+    "race": "丰蹄",
+    "rarity": 5,
+    "teamId": "企鹅物流"
+  },
+  "史尔特尔": {
+    "illust": "Ask",
+    "nation": "",
+    "profession": "近卫",
+    "race": "萨卡兹",
+    "rarity": 6
+  },
+  "史都华德": {
+    "illust": "一立里子",
+    "nation": "谢拉格",
+    "profession": "术师",
+    "race": "沃尔珀",
+    "rarity": 3,
+    "teamId": "行动预备组A4"
+  },
+  "号角": {
+    "illust": "m9nokuro",
+    "nation": "维多利亚",
+    "profession": "重装",
+    "race": "鲁珀",
+    "rarity": 6
+  },
+  "吽": {
+    "illust": "KuroBlood",
+    "nation": "龙门",
+    "profession": "重装",
+    "race": "佩洛",
+    "rarity": 5,
+    "teamId": "鲤氏侦探事务所"
+  },
+  "和弦": {
+    "illust": "STAR影法师",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "深池"
+  },
+  "哈洛德": {
+    "illust": "一千",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "嘉维尔": {
+    "illust": "LLC",
+    "nation": "未公开",
+    "profession": "医疗",
+    "race": "阿达克利斯",
+    "rarity": 4
+  },
+  "四月": {
+    "illust": "れおえん",
+    "nation": "雷姆必拓",
+    "profession": "狙击",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "因陀罗": {
+    "illust": "Infukun",
+    "nation": "不明",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "格拉斯哥帮"
+  },
+  "图耶": {
+    "illust": "aZLing4",
+    "nation": "萨尔贡",
+    "profession": "医疗",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "圣约送葬人": {
+    "illust": "Skade",
+    "nation": "拉特兰",
+    "profession": "近卫",
+    "race": "萨科塔",
+    "rarity": 6
+  },
+  "地灵": {
+    "illust": "HUG",
+    "nation": "莱塔尼亚",
+    "profession": "辅助",
+    "race": "卡普里尼",
+    "rarity": 4
+  },
+  "坚雷": {
+    "illust": "下野宏铭",
+    "nation": "哥伦比亚",
+    "profession": "重装",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "埃拉托": {
+    "illust": "温泉瓜",
+    "nation": "米诺斯",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "塑心": {
+    "illust": "竜崎いち",
+    "nation": "拉特兰",
+    "profession": "辅助",
+    "race": "萨科塔",
+    "rarity": 6
+  },
+  "塞雷娅": {
+    "illust": "NoriZC",
+    "nation": "哥伦比亚",
+    "profession": "重装",
+    "race": "瓦伊凡",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "夏栎": {
+    "illust": "YUJI",
+    "nation": "维多利亚",
+    "profession": "辅助",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "夕": {
+    "illust": "幻象黑兔",
+    "nation": "炎",
+    "profession": "术师",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "炎-岁"
+  },
+  "多萝西": {
+    "illust": "Jacknife",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "race": "札拉克",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "夜刀": {
+    "illust": "Skade",
+    "nation": "东国",
+    "profession": "先锋",
+    "race": "鬼",
+    "rarity": 2,
+    "teamId": "行动组A4"
+  },
+  "夜半": {
+    "illust": "温泉瓜",
+    "nation": "雷姆必拓",
+    "profession": "先锋",
+    "race": "萨弗拉",
+    "rarity": 5
+  },
+  "夜烟": {
+    "illust": "Skade",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 4
+  },
+  "夜莺": {
+    "illust": "Skade",
+    "nation": "卡兹戴尔",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "使徒"
+  },
+  "夜魔": {
+    "illust": "Lpip",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "天火": {
+    "illust": "TOKI",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "奥斯塔": {
+    "illust": "Infukun",
+    "nation": "叙拉古",
+    "profession": "狙击",
+    "race": "鲁珀",
+    "rarity": 5,
+    "teamId": "贾维团伙"
+  },
+  "奥达": {
+    "illust": "我妻洛酱",
+    "nation": "卡兹戴尔",
+    "profession": "近卫",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "子月": {
+    "illust": "IRIS_呓",
+    "nation": "叙拉古",
+    "profession": "狙击",
+    "race": "鲁珀",
+    "rarity": 5
+  },
+  "孑": {
+    "illust": "阿鬼",
+    "nation": "龙门",
+    "profession": "特种",
+    "race": "乌萨斯",
+    "rarity": 4
+  },
+  "守林人": {
+    "illust": "aZLing4",
+    "nation": "未公开",
+    "profession": "狙击",
+    "race": "埃拉菲亚",
+    "rarity": 5
+  },
+  "安哲拉": {
+    "illust": "LLC",
+    "nation": "伊比利亚",
+    "profession": "狙击",
+    "race": "阿戈尔",
+    "rarity": 5,
+    "teamId": "深海猎人"
+  },
+  "安德切尔": {
+    "illust": "一立里子",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "萨科塔",
+    "rarity": 3,
+    "teamId": "行动预备组A4"
+  },
+  "安比尔": {
+    "illust": "m9nokuro",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "萨科塔",
+    "rarity": 4
+  },
+  "安洁莉娜": {
+    "illust": "LM7",
+    "nation": "叙拉古",
+    "profession": "辅助",
+    "race": "沃尔珀",
+    "rarity": 6
+  },
+  "安赛尔": {
+    "illust": "一立里子",
+    "nation": "雷姆必拓",
+    "profession": "医疗",
+    "race": "卡特斯",
+    "rarity": 3,
+    "teamId": "行动预备组A4"
+  },
+  "宴": {
+    "illust": "釜飯轟々丸",
+    "nation": "东国",
+    "profession": "近卫",
+    "race": "不明",
+    "rarity": 4
+  },
+  "寒檀": {
+    "illust": "Studio Montagne",
+    "nation": "萨米",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "寒芒克洛丝": {
+    "illust": "下野宏铭",
+    "nation": "雷姆必拓",
+    "profession": "狙击",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "导火索": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "近卫",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "小满": {
+    "illust": "YUJI",
+    "nation": "炎",
+    "profession": "辅助",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "山": {
+    "illust": "WincalBlanke",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "崖心": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "喀兰贸易"
+  },
+  "嵯峨": {
+    "illust": "多元菌",
+    "nation": "东国",
+    "profession": "先锋",
+    "race": "佩洛",
+    "rarity": 6
+  },
+  "巡林者": {
+    "illust": "竜崎いち",
+    "nation": "未公开",
+    "profession": "狙击",
+    "race": "萨弗拉",
+    "rarity": 2,
+    "teamId": "行动组A4"
+  },
+  "左乐": {
+    "illust": "九日九号",
+    "nation": "炎",
+    "profession": "近卫",
+    "race": "斐迪亚",
+    "rarity": 6
+  },
+  "巫恋": {
+    "illust": "下野宏铭",
+    "nation": "叙拉古",
+    "profession": "辅助",
+    "race": "沃尔珀",
+    "rarity": 5
+  },
+  "布丁": {
+    "illust": "折射镜",
+    "nation": "哥伦比亚",
+    "profession": "术师",
+    "race": "阿戈尔",
+    "rarity": 4
+  },
+  "布洛卡": {
+    "illust": "Infukun",
+    "nation": "叙拉古",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "贾维团伙"
+  },
+  "帕拉斯": {
+    "illust": "aZLing4",
+    "nation": "米诺斯",
+    "profession": "近卫",
+    "race": "丰蹄",
+    "rarity": 6
+  },
+  "年": {
+    "illust": "幻象黑兔",
+    "nation": "炎",
+    "profession": "重装",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "炎-岁"
+  },
+  "幽灵鲨": {
+    "illust": "Skade",
+    "nation": "阿戈尔",
+    "profession": "近卫",
+    "race": "未公开",
+    "rarity": 5,
+    "teamId": "深海猎人"
+  },
+  "异客": {
+    "illust": "Skade",
+    "nation": "哥伦比亚",
+    "profession": "术师",
+    "race": "黎博利",
+    "rarity": 6
+  },
+  "归溟幽灵鲨": {
+    "illust": "Skade",
+    "nation": "阿戈尔",
+    "profession": "特种",
+    "race": "阿戈尔",
+    "rarity": 6,
+    "teamId": "深海猎人"
+  },
+  "微风": {
+    "illust": "藻",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "沃尔珀",
+    "rarity": 5
+  },
+  "德克萨斯": {
+    "illust": "幻象黑兔",
+    "nation": "哥伦比亚",
+    "profession": "先锋",
+    "race": "鲁珀",
+    "rarity": 5,
+    "teamId": "企鹅物流"
+  },
+  "惊蛰": {
+    "illust": "竜崎いち",
+    "nation": "炎",
+    "profession": "术师",
+    "race": "麒麟",
+    "rarity": 5
+  },
+  "慑砂": {
+    "illust": "竜崎いち",
+    "nation": "萨尔贡",
+    "profession": "狙击",
+    "race": "瓦伊凡",
+    "rarity": 5
+  },
+  "慕斯": {
+    "illust": "Iritoa",
+    "nation": "维多利亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 4
+  },
+  "战车": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "近卫",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "截云": {
+    "illust": "伍秋秋秋秋",
+    "nation": "炎",
+    "profession": "狙击",
+    "race": "阿纳萨",
+    "rarity": 5
+  },
+  "戴菲恩": {
+    "illust": "Cenm0",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "承曦格雷伊": {
+    "illust": "我妻洛酱",
+    "nation": "玻利瓦尔",
+    "profession": "狙击",
+    "race": "佩洛",
+    "rarity": 5
+  },
+  "折光": {
+    "illust": "およ",
+    "nation": "莱塔尼亚",
+    "profession": "术师",
+    "race": "卡普里尼",
+    "rarity": 5
+  },
+  "拉普兰德": {
+    "illust": "幻象黑兔",
+    "nation": "叙拉古",
+    "profession": "近卫",
+    "race": "鲁珀",
+    "rarity": 5
+  },
+  "拜松": {
+    "illust": "竜崎いち",
+    "nation": "龙门",
+    "profession": "重装",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "掠风": {
+    "illust": "nineo",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "佩洛",
+    "rarity": 5
+  },
+  "推进之王": {
+    "illust": "Infukun",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "阿斯兰",
+    "rarity": 6,
+    "teamId": "格拉斯哥帮"
+  },
+  "提丰": {
+    "illust": "LM7",
+    "nation": "萨米",
+    "profession": "狙击",
+    "race": "萨卡兹",
+    "rarity": 6
+  },
+  "摩根": {
+    "illust": "Infukun",
+    "nation": "维多利亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "格拉斯哥帮"
+  },
+  "斑点": {
+    "illust": "阿鬼",
+    "nation": "萨尔贡",
+    "profession": "重装",
+    "race": "瑞柏巴",
+    "rarity": 3,
+    "teamId": "行动预备组A6"
+  },
+  "斥罪": {
+    "illust": "IRIS_呓",
+    "nation": "叙拉古",
+    "profession": "重装",
+    "race": "鲁珀",
+    "rarity": 6
+  },
+  "断崖": {
+    "illust": "NoriZC",
+    "nation": "雷姆必拓",
+    "profession": "近卫",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "断罪者": {
+    "illust": "TOMATO",
+    "nation": "米诺斯",
+    "profession": "近卫",
+    "race": "未知（疑似黎博利）",
+    "rarity": 4
+  },
+  "斯卡蒂": {
+    "illust": "alchemaniac",
+    "nation": "阿戈尔",
+    "profession": "近卫",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "深海猎人"
+  },
+  "早露": {
+    "illust": "Skade",
+    "nation": "乌萨斯",
+    "profession": "狙击",
+    "race": "乌萨斯",
+    "rarity": 6,
+    "teamId": "乌萨斯学生自治团"
+  },
+  "明椒": {
+    "illust": "板板",
+    "nation": "哥伦比亚",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "星极": {
+    "illust": "YUJI",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "星源": {
+    "illust": "YUJI",
+    "nation": "哥伦比亚",
+    "profession": "术师",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "莱茵生命"
+  },
+  "星熊": {
+    "illust": "Infukun",
+    "nation": "东国",
+    "profession": "重装",
+    "race": "鬼",
+    "rarity": 6,
+    "teamId": "龙门近卫局"
+  },
+  "晓歌": {
+    "illust": "温泉瓜",
+    "nation": "玻利瓦尔",
+    "profession": "先锋",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "普罗旺斯": {
+    "illust": "渣念",
+    "nation": "叙拉古",
+    "profession": "狙击",
+    "race": "鲁珀",
+    "rarity": 5
+  },
+  "暗索": {
+    "illust": "m9nokuro",
+    "nation": "雷姆必拓",
+    "profession": "特种",
+    "race": "卡特斯",
+    "rarity": 4
+  },
+  "暮落": {
+    "illust": "Cenm0",
+    "nation": "维多利亚",
+    "profession": "重装",
+    "race": "斐迪亚",
+    "rarity": 5
+  },
+  "暴行": {
+    "illust": "TOKI",
+    "nation": "雷姆必拓",
+    "profession": "近卫",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "暴雨": {
+    "illust": "aZLing4",
+    "nation": "萨尔贡",
+    "profession": "重装",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "月禾": {
+    "illust": "上埜",
+    "nation": "东国",
+    "profession": "辅助",
+    "race": "埃拉菲亚",
+    "rarity": 5
+  },
+  "月见夜": {
+    "illust": "竜崎いち",
+    "nation": "东国",
+    "profession": "近卫",
+    "race": "萨卡兹",
+    "rarity": 3,
+    "teamId": "行动预备组A6"
+  },
+  "末药": {
+    "illust": "下野宏铭",
+    "nation": "未公开",
+    "profession": "医疗",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "杏仁": {
+    "illust": "直立行走",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "race": "佩洛",
+    "rarity": 5,
+    "teamId": "黑钢国际"
+  },
+  "杜宾": {
+    "illust": "LLC",
+    "nation": "玻利瓦尔",
+    "profession": "近卫",
+    "race": "佩洛",
+    "rarity": 4
+  },
+  "杜林": {
+    "illust": "Skade",
+    "nation": "未公开",
+    "profession": "术师",
+    "race": "杜林",
+    "rarity": 2,
+    "teamId": "行动组A4"
+  },
+  "杰克": {
+    "illust": "Nagu",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "佩洛",
+    "rarity": 4
+  },
+  "杰西卡": {
+    "illust": "m9nokuro",
+    "nation": "维多利亚",
+    "profession": "狙击",
+    "race": "菲林",
+    "rarity": 4,
+    "teamId": "黑钢国际"
+  },
+  "松果": {
+    "illust": "TrNyteal",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 4
+  },
+  "极光": {
+    "illust": "LAL!ROLE",
+    "nation": "谢拉格",
+    "profession": "重装",
+    "race": "乌萨斯",
+    "rarity": 5,
+    "teamId": "喀兰贸易"
+  },
+  "极境": {
+    "illust": "Skade",
+    "nation": "伊比利亚",
+    "profession": "先锋",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "林": {
+    "illust": "三目YYB",
+    "nation": "龙门",
+    "profession": "术师",
+    "race": "札拉克",
+    "rarity": 6
+  },
+  "柏喙": {
+    "illust": "RAYVON",
+    "nation": "萨米",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "格劳克斯": {
+    "illust": "下野宏铭",
+    "nation": "阿戈尔地区",
+    "profession": "辅助",
+    "race": "未公开",
+    "rarity": 5
+  },
+  "格拉尼": {
+    "illust": "alchemaniac",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "格雷伊": {
+    "illust": "我妻洛酱",
+    "nation": "玻利瓦尔",
+    "profession": "术师",
+    "race": "佩洛",
+    "rarity": 4
+  },
+  "桃金娘": {
+    "illust": "咩煲",
+    "nation": "未公开",
+    "profession": "先锋",
+    "race": "杜林",
+    "rarity": 4
+  },
+  "桑葚": {
+    "illust": "Jacknife",
+    "nation": "炎",
+    "profession": "医疗",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "梅": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 4
+  },
+  "梅尔": {
+    "illust": "幻象黑兔",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "阿纳缇",
+    "rarity": 5,
+    "teamId": "莱茵生命"
+  },
+  "梓兰": {
+    "illust": "Skade",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "黎博利",
+    "rarity": 3,
+    "teamId": "行动预备组A6"
+  },
+  "棘刺": {
+    "illust": "幻象黑兔",
+    "nation": "伊比利亚",
+    "profession": "近卫",
+    "race": "阿戈尔",
+    "rarity": 6
+  },
+  "森蚺": {
+    "illust": "Liduke",
+    "nation": "萨尔贡",
+    "profession": "重装",
+    "race": "斐迪亚",
+    "rarity": 6
+  },
+  "槐琥": {
+    "illust": "KuroBlood",
+    "nation": "炎",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "鲤氏侦探事务所"
+  },
+  "歌蕾蒂娅": {
+    "illust": "Chuzenji",
+    "nation": "阿戈尔",
+    "profession": "特种",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "深海猎人"
+  },
+  "止颂": {
+    "illust": "カワグチ",
+    "nation": "莱塔尼亚",
+    "profession": "近卫",
+    "race": "卡普里尼",
+    "rarity": 6
+  },
+  "正义骑士号": {
+    "illust": "NoriZC",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "rarity": 1,
+    "teamId": "红松骑士团"
+  },
+  "水月": {
+    "illust": "Namie",
+    "nation": "东国",
+    "profession": "特种",
+    "race": "阿戈尔",
+    "rarity": 6
+  },
+  "泡普卡": {
+    "illust": "下野宏铭",
+    "nation": "雷姆必拓",
+    "profession": "近卫",
+    "race": "卡特斯",
+    "rarity": 3,
+    "teamId": "行动预备组A6"
+  },
+  "泡泡": {
+    "illust": "Cenm0",
+    "nation": "萨尔贡",
+    "profession": "重装",
+    "race": "塞拉托",
+    "rarity": 4
+  },
+  "波登可": {
+    "illust": "アシマ",
+    "nation": "玻利瓦尔",
+    "profession": "辅助",
+    "race": "佩洛",
+    "rarity": 4
+  },
+  "泥岩": {
+    "illust": "m9nokuro",
+    "nation": "卡兹戴尔",
+    "profession": "重装",
+    "race": "萨卡兹",
+    "rarity": 6
+  },
+  "泰拉大陆调查团": {
+    "illust": "桃色Miruku",
+    "nation": "未知",
+    "profession": "狙击",
+    "race": "未公开",
+    "rarity": 1
+  },
+  "洋灰": {
+    "illust": "科学",
+    "nation": "雷姆必拓",
+    "profession": "重装",
+    "race": "札拉克",
+    "rarity": 5
+  },
+  "洛洛": {
+    "illust": "Cenm0",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "流明": {
+    "illust": "一千",
+    "nation": "伊比利亚",
+    "profession": "医疗",
+    "race": "阿戈尔",
+    "rarity": 6
+  },
+  "流星": {
+    "illust": "HUG",
+    "nation": "卡西米尔",
+    "profession": "狙击",
+    "race": "库兰塔",
+    "rarity": 4
+  },
+  "浊心斯卡蒂": {
+    "illust": "alchemaniac",
+    "nation": "阿戈尔",
+    "profession": "辅助",
+    "race": "未公开",
+    "rarity": 6
+  },
+  "海沫": {
+    "illust": "Horin",
+    "nation": "伊比利亚",
+    "profession": "近卫",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "海蒂": {
+    "illust": "熊太",
+    "nation": "维多利亚",
+    "profession": "辅助",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "海霓": {
+    "illust": "色塩",
+    "nation": "阿戈尔",
+    "profession": "辅助",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "涤火杰西卡": {
+    "illust": "Cenm0",
+    "nation": "维多利亚",
+    "profession": "重装",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "黑钢国际"
+  },
+  "淬羽赫默": {
+    "illust": "九日九号",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "黎博利",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "深巡": {
+    "illust": "〇亻",
+    "nation": "阿戈尔",
+    "profession": "重装",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "深律": {
+    "illust": "九日九号",
+    "nation": "莱塔尼亚",
+    "profession": "重装",
+    "race": "鲁珀",
+    "rarity": 5
+  },
+  "深海色": {
+    "illust": "REALMBW",
+    "nation": "未公开",
+    "profession": "辅助",
+    "race": "未公开",
+    "rarity": 4
+  },
+  "深靛": {
+    "illust": "织布机loom",
+    "nation": "伊比利亚",
+    "profession": "术师",
+    "race": "斐迪亚",
+    "rarity": 4
+  },
+  "清流": {
+    "illust": "唯@W",
+    "nation": "炎",
+    "profession": "医疗",
+    "race": "阿戈尔",
+    "rarity": 4
+  },
+  "清道夫": {
+    "illust": "戏言咸咸",
+    "nation": "未公开",
+    "profession": "先锋",
+    "race": "札拉克",
+    "rarity": 4,
+    "teamId": "S.W.E.E.P."
+  },
+  "温米": {
+    "illust": "二色こぺ",
+    "nation": "雷姆必拓",
+    "profession": "术师",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "温蒂": {
+    "illust": "下野宏铭",
+    "nation": "伊比利亚",
+    "profession": "特种",
+    "race": "阿戈尔",
+    "rarity": 6
+  },
+  "澄闪": {
+    "illust": "Namie",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "濯尘芙蓉": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "火哨": {
+    "illust": "IRIS_呓",
+    "nation": "雷姆必拓",
+    "profession": "重装",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "火神": {
+    "illust": "neco",
+    "nation": "米诺斯",
+    "profession": "重装",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "火龙S黑角": {
+    "illust": "九日九号",
+    "nation": "东国",
+    "profession": "近卫",
+    "race": "鬼",
+    "rarity": 5,
+    "teamId": "行动组A4"
+  },
+  "灰喉": {
+    "illust": "m9nokuro",
+    "nation": "未公开",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "灰毫": {
+    "illust": "NoriZC",
+    "nation": "卡西米尔",
+    "profession": "重装",
+    "race": "札拉克",
+    "rarity": 5,
+    "teamId": "红松骑士团"
+  },
+  "灰烬": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "狙击",
+    "race": "未知",
+    "rarity": 6,
+    "teamId": "彩虹小队"
+  },
+  "灵知": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "辅助",
+    "race": "黎博利",
+    "rarity": 6,
+    "teamId": "喀兰贸易"
+  },
+  "炎客": {
+    "illust": "虎三",
+    "nation": "卡兹戴尔",
+    "profession": "近卫",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "炎熔": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "萨卡兹",
+    "rarity": 3,
+    "teamId": "行动预备组A1"
+  },
+  "炎狱炎熔": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "烈夏": {
+    "illust": "Skade",
+    "nation": "乌萨斯",
+    "profession": "近卫",
+    "race": "乌萨斯",
+    "rarity": 5,
+    "teamId": "乌萨斯学生自治团"
+  },
+  "焰尾": {
+    "illust": "NoriZC",
+    "nation": "卡西米尔",
+    "profession": "先锋",
+    "race": "札拉克",
+    "rarity": 6,
+    "teamId": "红松骑士团"
+  },
+  "焰影苇草": {
+    "illust": "STAR影法师",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "德拉克",
+    "rarity": 6,
+    "teamId": "深池"
+  },
+  "煌": {
+    "illust": "唯@W",
+    "nation": "维多利亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "罗德岛-精英干员"
+  },
+  "熔泉": {
+    "illust": "山×2",
+    "nation": "维多利亚",
+    "profession": "狙击",
+    "race": "瓦伊凡",
+    "rarity": 5
+  },
+  "燧石": {
+    "illust": "aZLing4",
+    "nation": "萨尔贡",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "爱丽丝": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "特米米": {
+    "illust": "Chuzenji",
+    "nation": "萨尔贡",
+    "profession": "术师",
+    "race": "阿达克利斯",
+    "rarity": 5
+  },
+  "狮蝎": {
+    "illust": "竜崎いち",
+    "nation": "萨尔贡",
+    "profession": "特种",
+    "race": "曼提柯",
+    "rarity": 5
+  },
+  "猎蜂": {
+    "illust": "toast",
+    "nation": "乌萨斯",
+    "profession": "近卫",
+    "race": "乌萨斯",
+    "rarity": 4
+  },
+  "玛恩纳": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "近卫",
+    "race": "库兰塔",
+    "rarity": 6
+  },
+  "玫兰莎": {
+    "illust": "一立里子",
+    "nation": "维多利亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 3,
+    "teamId": "行动预备组A4"
+  },
+  "玫拉": {
+    "illust": "redjuice",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "race": "斐迪亚",
+    "rarity": 5
+  },
+  "琳琅诗怀雅": {
+    "illust": "下野宏铭",
+    "nation": "龙门",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "琴柳": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "瓦伊凡",
+    "rarity": 6
+  },
+  "瑕光": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "重装",
+    "race": "库兰塔",
+    "rarity": 6
+  },
+  "白金": {
+    "illust": "Skade",
+    "nation": "卡西米尔",
+    "profession": "狙击",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "白铁": {
+    "illust": "一千",
+    "nation": "维多利亚",
+    "profession": "辅助",
+    "race": "菲林",
+    "rarity": 6
+  },
+  "白雪": {
+    "illust": "阿鬼",
+    "nation": "东国",
+    "profession": "狙击",
+    "race": "阿纳缇",
+    "rarity": 4
+  },
+  "白面鸮": {
+    "illust": "竜崎いち",
+    "nation": "哥伦比亚",
+    "profession": "医疗",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "莱茵生命"
+  },
+  "百炼嘉维尔": {
+    "illust": "LLC",
+    "nation": "萨尔贡",
+    "profession": "近卫",
+    "race": "阿达克利斯",
+    "rarity": 6
+  },
+  "真理": {
+    "illust": "Skade",
+    "nation": "乌萨斯",
+    "profession": "辅助",
+    "race": "乌萨斯",
+    "rarity": 5,
+    "teamId": "乌萨斯学生自治团"
+  },
+  "石棉": {
+    "illust": "TEAM EXPNDR",
+    "nation": "雷姆必拓",
+    "profession": "重装",
+    "race": "萨弗拉",
+    "rarity": 5
+  },
+  "石英": {
+    "illust": "伍秋秋秋秋",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "鲁珀",
+    "rarity": 4
+  },
+  "砾": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "特种",
+    "race": "札拉克",
+    "rarity": 4
+  },
+  "稀音": {
+    "illust": "アシマ",
+    "nation": "萨尔贡",
+    "profession": "辅助",
+    "race": "皮洛萨",
+    "rarity": 5
+  },
+  "空": {
+    "illust": "幻象黑兔",
+    "nation": "因经纪公司要求不公开",
+    "profession": "辅助",
+    "race": "因经纪公司要求不公开",
+    "rarity": 5,
+    "teamId": "企鹅物流"
+  },
+  "空弦": {
+    "illust": "alchemaniac",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 6
+  },
+  "空构": {
+    "illust": "おぐち",
+    "nation": "拉特兰",
+    "profession": "特种",
+    "race": "萨科塔",
+    "rarity": 5
+  },
+  "空爆": {
+    "illust": "m9nokuro",
+    "nation": "卡西米尔",
+    "profession": "狙击",
+    "race": "库兰塔",
+    "rarity": 3,
+    "teamId": "行动预备组A6"
+  },
+  "米格鲁": {
+    "illust": "下野宏铭",
+    "nation": "玻利瓦尔",
+    "profession": "重装",
+    "race": "佩洛",
+    "rarity": 3,
+    "teamId": "行动预备组A1"
+  },
+  "絮雨": {
+    "illust": "Chuzenji",
+    "nation": "伊比利亚",
+    "profession": "医疗",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "红": {
+    "illust": "Infukun",
+    "nation": "未公开",
+    "profession": "特种",
+    "race": "鲁珀",
+    "rarity": 5,
+    "teamId": "S.W.E.E.P."
+  },
+  "红云": {
+    "illust": "KENTllaall",
+    "nation": "不明",
+    "profession": "狙击",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "红豆": {
+    "illust": "下野宏铭",
+    "nation": "卡兹戴尔",
+    "profession": "先锋",
+    "race": "萨卡兹",
+    "rarity": 4
+  },
+  "红隼": {
+    "illust": "釜飯轟々丸",
+    "nation": "萨尔贡",
+    "profession": "先锋",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "纯烬艾雅法拉": {
+    "illust": "Anmi",
+    "nation": "莱塔尼亚",
+    "profession": "医疗",
+    "race": "卡普里尼",
+    "rarity": 6
+  },
+  "绮良": {
+    "illust": "我妻洛酱",
+    "nation": "东国",
+    "profession": "特种",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "维什戴尔": {
+    "illust": "Liduke",
+    "nation": "卡兹戴尔",
+    "profession": "狙击",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "巴别塔"
+  },
+  "维荻": {
+    "illust": "百慕大飞鱼",
+    "nation": "维多利亚",
+    "profession": "特种",
+    "race": "斐迪亚",
+    "rarity": 4
+  },
+  "缄默德克萨斯": {
+    "illust": "幻象黑兔",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "race": "鲁珀",
+    "rarity": 6,
+    "teamId": "企鹅物流"
+  },
+  "缠丸": {
+    "illust": "竜崎いち",
+    "nation": "东国",
+    "profession": "近卫",
+    "race": "鬼",
+    "rarity": 4
+  },
+  "缪尔赛思": {
+    "illust": "NoriZC",
+    "nation": "未公开",
+    "profession": "先锋",
+    "race": "精灵",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "罗宾": {
+    "illust": "aZLing4",
+    "nation": "哥伦比亚",
+    "profession": "特种",
+    "race": "阿纳缇",
+    "rarity": 5
+  },
+  "罗小黑": {
+    "illust": "九日九号",
+    "nation": "未知",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 4
+  },
+  "罗比菈塔": {
+    "illust": "IRIS_呓",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "阿纳缇",
+    "rarity": 4
+  },
+  "羽毛笔": {
+    "illust": "LAL!ROLE",
+    "nation": "玻利瓦尔",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "翎羽": {
+    "illust": "deel",
+    "nation": "拉特兰",
+    "profession": "先锋",
+    "race": "黎博利",
+    "rarity": 3
+  },
+  "耀骑士临光": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "近卫",
+    "race": "库兰塔",
+    "rarity": 6
+  },
+  "老鲤": {
+    "illust": "KuroBlood",
+    "nation": "炎",
+    "profession": "特种",
+    "race": "龙",
+    "rarity": 6,
+    "teamId": "鲤氏侦探事务所"
+  },
+  "耶拉": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "术师",
+    "race": "未公开",
+    "rarity": 5,
+    "teamId": "喀兰贸易"
+  },
+  "能天使": {
+    "illust": "幻象黑兔",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "萨科塔",
+    "rarity": 6,
+    "teamId": "企鹅物流"
+  },
+  "至简": {
+    "illust": "〇亻",
+    "nation": "杜林",
+    "profession": "术师",
+    "race": "杜林",
+    "rarity": 5
+  },
+  "艾丝黛尔": {
+    "illust": "鸭",
+    "nation": "未公开",
+    "profession": "近卫",
+    "race": "阿达克利斯",
+    "rarity": 4
+  },
+  "艾丽妮": {
+    "illust": "aZLing4",
+    "nation": "伊比利亚",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 6
+  },
+  "艾拉": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "特种",
+    "race": "未知",
+    "rarity": 6,
+    "teamId": "彩虹小队"
+  },
+  "艾雅法拉": {
+    "illust": "Anmi",
+    "nation": "莱塔尼亚",
+    "profession": "术师",
+    "race": "卡普里尼",
+    "rarity": 6
+  },
+  "芙兰卡": {
+    "illust": "TOKI",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "沃尔珀",
+    "rarity": 5,
+    "teamId": "黑钢国际"
+  },
+  "芙蓉": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 3,
+    "teamId": "行动预备组A1"
+  },
+  "芬": {
+    "illust": "下野宏铭",
+    "nation": "卡西米尔",
+    "profession": "先锋",
+    "race": "库兰塔",
+    "rarity": 3,
+    "teamId": "行动预备组A1"
+  },
+  "芳汀": {
+    "illust": "umo_yszx",
+    "nation": "拉特兰",
+    "profession": "近卫",
+    "race": "萨科塔",
+    "rarity": 4
+  },
+  "苇草": {
+    "illust": "STAR影法师",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "德拉克",
+    "rarity": 5
+  },
+  "苍苔": {
+    "illust": "Cenm0",
+    "nation": "汐斯塔",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "汐斯塔"
+  },
+  "苏苏洛": {
+    "illust": "将",
+    "nation": "叙拉古",
+    "profession": "医疗",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "苦艾": {
+    "illust": "aZLing4",
+    "nation": "乌萨斯",
+    "profession": "术师",
+    "race": "乌萨斯",
+    "rarity": 5
+  },
+  "莫斯提马": {
+    "illust": "幻象黑兔",
+    "nation": "拉特兰",
+    "profession": "术师",
+    "race": "未公开",
+    "rarity": 6
+  },
+  "莱伊": {
+    "illust": "Cenm0",
+    "nation": "雷姆必拓",
+    "profession": "狙击",
+    "race": "卡特斯",
+    "rarity": 6
+  },
+  "莱恩哈特": {
+    "illust": "野崎つばた",
+    "nation": "雷姆必拓",
+    "profession": "术师",
+    "race": "卡特斯",
+    "rarity": 5
+  },
+  "菲亚梅塔": {
+    "illust": "幻象黑兔",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 6
+  },
+  "蓝毒": {
+    "illust": "LLC",
+    "nation": "未公开",
+    "profession": "狙击",
+    "race": "安努拉",
+    "rarity": 5
+  },
+  "薄绿": {
+    "illust": "ヌードル",
+    "nation": "维多利亚",
+    "profession": "术师",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "薇薇安娜": {
+    "illust": "Chuzenji",
+    "nation": "莱塔尼亚",
+    "profession": "近卫",
+    "race": "埃拉菲亚",
+    "rarity": 6
+  },
+  "蚀清": {
+    "illust": "Jacknife",
+    "nation": "哥伦比亚",
+    "profession": "术师",
+    "race": "斐迪亚",
+    "rarity": 5
+  },
+  "蛇屠箱": {
+    "illust": "Skade",
+    "nation": "未公开",
+    "profession": "重装",
+    "race": "匹特拉姆",
+    "rarity": 4
+  },
+  "蜜莓": {
+    "illust": "Liyu黎",
+    "nation": "雷姆必拓",
+    "profession": "医疗",
+    "race": "札拉克",
+    "rarity": 5
+  },
+  "蜜蜡": {
+    "illust": "カワグチ",
+    "nation": "萨尔贡",
+    "profession": "术师",
+    "race": "卡普里尼",
+    "rarity": 5
+  },
+  "褐果": {
+    "illust": "树豚",
+    "nation": "未公开",
+    "profession": "医疗",
+    "race": "杜林",
+    "rarity": 4
+  },
+  "见行者": {
+    "illust": "Chuzenji",
+    "nation": "拉特兰",
+    "profession": "特种",
+    "race": "萨科塔",
+    "rarity": 5
+  },
+  "角峰": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "重装",
+    "race": "丰蹄",
+    "rarity": 4,
+    "teamId": "喀兰贸易"
+  },
+  "讯使": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "先锋",
+    "race": "依特拉",
+    "rarity": 4,
+    "teamId": "喀兰贸易"
+  },
+  "诗怀雅": {
+    "illust": "下野宏铭",
+    "nation": "龙门",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "龙门近卫局"
+  },
+  "调香师": {
+    "illust": "Lanzi",
+    "nation": "米诺斯",
+    "profession": "医疗",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "谜图": {
+    "illust": "kan",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "瓦伊凡",
+    "rarity": 5
+  },
+  "豆苗": {
+    "illust": "一千",
+    "nation": "哥伦比亚",
+    "profession": "先锋",
+    "race": "瑞柏巴",
+    "rarity": 4
+  },
+  "贝娜": {
+    "illust": "下野宏铭",
+    "nation": "维多利亚",
+    "profession": "特种",
+    "race": "卡普里尼",
+    "rarity": 5
+  },
+  "贾维": {
+    "illust": "Infukun",
+    "nation": "叙拉古",
+    "profession": "先锋",
+    "race": "沃尔珀",
+    "rarity": 5,
+    "teamId": "贾维团伙"
+  },
+  "赤冬": {
+    "illust": "熊太",
+    "nation": "东国",
+    "profession": "近卫",
+    "race": "阿戈尔",
+    "rarity": 5
+  },
+  "赫德雷": {
+    "illust": "树豚",
+    "nation": "卡兹戴尔",
+    "profession": "近卫",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "巴别塔"
+  },
+  "赫拉格": {
+    "illust": "Liduke",
+    "nation": "乌萨斯",
+    "profession": "近卫",
+    "race": "黎博利",
+    "rarity": 6
+  },
+  "赫默": {
+    "illust": "NoriZC",
+    "nation": "哥伦比亚",
+    "profession": "医疗",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "莱茵生命"
+  },
+  "跃跃": {
+    "illust": "臼",
+    "nation": "玻利瓦尔",
+    "profession": "狙击",
+    "race": "卡特斯",
+    "rarity": 4
+  },
+  "车尔尼": {
+    "illust": "九日九号",
+    "nation": "莱塔尼亚",
+    "profession": "重装",
+    "race": "埃拉菲亚",
+    "rarity": 5
+  },
+  "达格达": {
+    "illust": "Infukun",
+    "nation": "维多利亚",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 5,
+    "teamId": "格拉斯哥帮"
+  },
+  "远山": {
+    "illust": "谜肘",
+    "nation": "萨米",
+    "profession": "术师",
+    "race": "埃拉菲亚",
+    "rarity": 4
+  },
+  "远牙": {
+    "illust": "NoriZC",
+    "nation": "卡西米尔",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 6,
+    "teamId": "红松骑士团"
+  },
+  "迷迭香": {
+    "illust": "唯@W",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "罗德岛-精英干员"
+  },
+  "送葬人": {
+    "illust": "Skade",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "萨科塔",
+    "rarity": 5
+  },
+  "逻各斯": {
+    "illust": "Skade",
+    "nation": "卡兹戴尔",
+    "profession": "术师",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "罗德岛-精英干员"
+  },
+  "郁金香": {
+    "illust": "Chuzenji",
+    "nation": "伊比利亚",
+    "profession": "先锋",
+    "race": "斐迪亚",
+    "rarity": 5
+  },
+  "酸糖": {
+    "illust": "Lanzi",
+    "nation": "哥伦比亚",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 4
+  },
+  "重岳": {
+    "illust": "KuroBlood",
+    "nation": "炎",
+    "profession": "近卫",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "炎-岁"
+  },
+  "野鬃": {
+    "illust": "NoriZC",
+    "nation": "卡西米尔",
+    "profession": "先锋",
+    "race": "库兰塔",
+    "rarity": 5,
+    "teamId": "红松骑士团"
+  },
+  "铃兰": {
+    "illust": "将",
+    "nation": "东国",
+    "profession": "辅助",
+    "race": "沃尔珀",
+    "rarity": 6
+  },
+  "铅踝": {
+    "illust": "板板",
+    "nation": "萨尔贡",
+    "profession": "狙击",
+    "race": "黎博利",
+    "rarity": 4
+  },
+  "铎铃": {
+    "illust": "〇亻",
+    "nation": "炎",
+    "profession": "近卫",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "银灰": {
+    "illust": "竜崎いち",
+    "nation": "谢拉格",
+    "profession": "近卫",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "喀兰贸易"
+  },
+  "铸铁": {
+    "illust": "将",
+    "nation": "米诺斯",
+    "profession": "近卫",
+    "race": "丰蹄",
+    "rarity": 5
+  },
+  "锏": {
+    "illust": "竜崎いち",
+    "nation": "莱塔尼亚",
+    "profession": "近卫",
+    "race": "卡普里尼",
+    "rarity": 6,
+    "teamId": "喀兰贸易"
+  },
+  "锡兰": {
+    "illust": "Skade",
+    "nation": "汐斯塔（独立城邦）",
+    "profession": "医疗",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "汐斯塔"
+  },
+  "闪击": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "重装",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "闪灵": {
+    "illust": "竜崎いち",
+    "nation": "卡兹戴尔",
+    "profession": "医疗",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "使徒"
+  },
+  "阿": {
+    "illust": "KuroBlood",
+    "nation": "龙门",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "鲤氏侦探事务所"
+  },
+  "阿斯卡纶": {
+    "illust": "Cenm0",
+    "nation": "卡兹戴尔",
+    "profession": "特种",
+    "race": "萨卡兹",
+    "rarity": 6,
+    "teamId": "S.W.E.E.P."
+  },
+  "阿消": {
+    "illust": "阿鬼",
+    "nation": "龙门",
+    "profession": "特种",
+    "race": "札拉克",
+    "rarity": 4
+  },
+  "阿米娅": {
+    "illust": "唯@W",
+    "nation": "雷姆必拓",
+    "profession": "术师",
+    "race": "卡特斯/奇美拉",
+    "rarity": 5
+  },
+  "阿罗玛": {
+    "illust": "ヌードル",
+    "nation": "叙拉古",
+    "profession": "术师",
+    "race": "鲁珀",
+    "rarity": 5
+  },
+  "陈": {
+    "illust": "唯@W",
+    "nation": "龙门",
+    "profession": "近卫",
+    "race": "龙",
+    "rarity": 6,
+    "teamId": "龙门近卫局"
+  },
+  "陨星": {
+    "illust": "TOKI",
+    "nation": "卡兹戴尔",
+    "profession": "狙击",
+    "race": "萨卡兹",
+    "rarity": 5
+  },
+  "隐现": {
+    "illust": "umo_yszx",
+    "nation": "拉特兰",
+    "profession": "狙击",
+    "race": "萨科塔",
+    "rarity": 5
+  },
+  "雪绒": {
+    "illust": "三目YYB",
+    "nation": "萨米",
+    "profession": "术师",
+    "race": "沃尔珀",
+    "rarity": 5
+  },
+  "雪雉": {
+    "illust": "NoriZC",
+    "nation": "龙门",
+    "profession": "特种",
+    "race": "黎博利",
+    "rarity": 5
+  },
+  "雷蛇": {
+    "illust": "TOKI",
+    "nation": "瓦伊凡",
+    "profession": "重装",
+    "race": "瓦伊凡",
+    "rarity": 5,
+    "teamId": "黑钢国际"
+  },
+  "霍尔海雅": {
+    "illust": "LM7",
+    "nation": "哥伦比亚",
+    "profession": "术师",
+    "race": "未公开",
+    "rarity": 6
+  },
+  "霜华": {
+    "illust": "Ubisoft",
+    "nation": "未知",
+    "profession": "特种",
+    "race": "未知",
+    "rarity": 5,
+    "teamId": "彩虹小队"
+  },
+  "霜叶": {
+    "illust": "下野宏铭",
+    "nation": "哥伦比亚",
+    "profession": "近卫",
+    "race": "沃尔珀",
+    "rarity": 4
+  },
+  "露托": {
+    "illust": "水滴鱼",
+    "nation": "玻利瓦尔",
+    "profession": "重装",
+    "race": "札拉克",
+    "rarity": 4
+  },
+  "青枳": {
+    "illust": "NOCO",
+    "nation": "汐斯塔",
+    "profession": "先锋",
+    "race": "黎博利",
+    "rarity": 5,
+    "teamId": "汐斯塔"
+  },
+  "鞭刃": {
+    "illust": "竜崎いち",
+    "nation": "卡西米尔",
+    "profession": "近卫",
+    "race": "库兰塔",
+    "rarity": 5
+  },
+  "风丸": {
+    "illust": "温泉瓜",
+    "nation": "东国",
+    "profession": "特种",
+    "race": "菲林",
+    "rarity": 5
+  },
+  "风笛": {
+    "illust": "u介",
+    "nation": "维多利亚",
+    "profession": "先锋",
+    "race": "瓦伊凡",
+    "rarity": 6
+  },
+  "食铁兽": {
+    "illust": "RAN",
+    "nation": "炎",
+    "profession": "特种",
+    "race": "乌萨斯",
+    "rarity": 5
+  },
+  "香草": {
+    "illust": "m9nokuro",
+    "nation": "瓦伊凡",
+    "profession": "先锋",
+    "race": "瓦伊凡",
+    "rarity": 3,
+    "teamId": "黑钢国际"
+  },
+  "魔王": {
+    "illust": "Chuzenji",
+    "nation": "卡兹戴尔",
+    "profession": "辅助",
+    "race": "未公开",
+    "rarity": 6
+  },
+  "鸿雪": {
+    "illust": "Chuzenji",
+    "nation": "乌萨斯",
+    "profession": "狙击",
+    "race": "鲁珀",
+    "rarity": 6
+  },
+  "麒麟R夜刀": {
+    "illust": "一千",
+    "nation": "东国",
+    "profession": "特种",
+    "race": "鬼",
+    "rarity": 6,
+    "teamId": "行动组A4"
+  },
+  "麦哲伦": {
+    "illust": "NoriZC",
+    "nation": "哥伦比亚",
+    "profession": "辅助",
+    "race": "黎博利",
+    "rarity": 6,
+    "teamId": "莱茵生命"
+  },
+  "黍": {
+    "illust": "IRIS_呓",
+    "nation": "炎",
+    "profession": "重装",
+    "race": "未公开",
+    "rarity": 6,
+    "teamId": "炎-岁"
+  },
+  "黑": {
+    "illust": "Liduke",
+    "nation": "雷姆必拓",
+    "profession": "狙击",
+    "race": "菲林",
+    "rarity": 6,
+    "teamId": "汐斯塔"
+  },
+  "黑角": {
+    "illust": "竜崎いち",
+    "nation": "东国",
+    "profession": "重装",
+    "race": "鬼",
+    "rarity": 2,
+    "teamId": "行动组A4"
+  },
+  "黑键": {
+    "illust": "竜崎いち",
+    "nation": "莱塔尼亚",
+    "profession": "术师",
+    "race": "卡普里尼",
+    "rarity": 6
+  },
+  "龙舌兰": {
+    "illust": "一千",
+    "nation": "玻利瓦尔",
+    "profession": "近卫",
+    "race": "佩洛",
+    "rarity": 5
+  }
+}
